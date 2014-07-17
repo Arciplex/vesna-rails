@@ -6,7 +6,7 @@ ruby "2.1.0"
 gem 'rails', '4.1.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
+gem 'pg'
 gem 'turbolinks'
 gem 'therubyracer', platforms: :ruby
 gem 'unicorn'
