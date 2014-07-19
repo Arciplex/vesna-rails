@@ -3,6 +3,7 @@
 /db/*.sqlite3-journal
 /log/*.log
 /tmp
+.DS_Store
 
 custom_plan.rb
 zeus.json

@@ -1,0 +1,126 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "custom_mixins";
+@import "mobile";
+
+html, body {
+  height: 100%;
+}
+
+.navbar {
+  @include gradient-vertical(#035894, #04395e);
+  height: 125px;
+  margin-top: 50px;
+  z-index: 1;
+  margin-bottom: 0;
+
+  #brand-container {
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand {
+    margin-top: -20px;
+    display: inline-block;
+    float: none;
+    height: 99px;
+    width: 383px;
+    background: image-url("Vesna_Logo.png") no-repeat;
+  }
+
+  #nav-container {
+    @include box-shadow(0px, 0px, 10px, black);
+    background-color: white;
+    height: 40px;
+    width: 950px;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      background: none;
+      padding: 15px 10px 0px 10px;
+      color: #7A7A7A;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 18px;
+
+      &:hover {
+        border-bottom: 6px solid #A8D7F4;
+      }
+    }
+  }
+}
+
+#carousel-container {
+  position: relative;
+  margin-top: -5px;
+
+  .carousel-indicators {
+    bottom: 0;
+
+    li {
+      background-color: white;
+      border: none;
+      width: 20px;
+      height: 20px;
+      @include box-shadow(0px, 0px, 3px, black);
+
+      &.active {
+        background-color: #69BCEA;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+      }
+    }
+  }
+
+  .carousel,.item,.active{height:100%;}
+  .carousel-inner{height:100%;}
+
+  .carousel-footer {
+    @include gradient-vertical(#035894, #04395e);
+    height: 45px;
+    border-bottom: 6px solid #A8D7F4;
+  }
+}
+
+footer {
+  width: 100%;
+  background: #696A6C image-url("footer_pattern.png") repeat;
+
+  img#made_in_america {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  #copyright {
+    margin-top: -15px;
+    color: white
+  }
+
+  #footer-nav {
+    border-bottom: 1px solid white;
+    position: relative;
+    margin-top: -60px;
+
+    .nav {
+      li {
+        a {
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: none;
+          padding-bottom: 5px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}

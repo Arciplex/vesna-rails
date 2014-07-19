@@ -15,10 +15,10 @@ gem 'mandrill_mailer'
 gem "sidekiq"
 gem "thin"
 gem 'sprockets', '2.11.0'
+gem 'bootstrap-sass', '~> 3.2'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
-  gem 'bootstrap-sass', '~> 3.0.3.0'
   gem 'coffee-rails', '~> 4.0.0'
   gem 'jquery-rails'
   gem "font-awesome-rails"
