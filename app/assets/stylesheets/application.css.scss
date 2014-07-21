@@ -124,9 +124,15 @@ html, body {
       left: 175px;
       color: #69BEEA;
 
+
       h3 { font-size: 65px; margin: 0; }
       h1 {
         font-size: 105px; margin: 0;
+
+        &#biker {
+          display: block;
+          margin-left: 100px;
+        }
       }
     }
 
