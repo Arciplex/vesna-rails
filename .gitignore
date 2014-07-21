@@ -7,3 +7,6 @@
 
 custom_plan.rb
 zeus.json
+
+# Ignore application configuration
+/config/application.yml

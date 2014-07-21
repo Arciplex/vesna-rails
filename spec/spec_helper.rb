@@ -37,14 +37,8 @@ def setup_environment
 
     config.mock_with :rspec
 
-    config.after(:each) do
-      Warden.test_reset!
-    end
-
     config.include Rails.application.routes.url_helpers
     config.include FactoryGirl::Syntax::Methods
-    # needed for testing API
-    config.include RSpec::Rails::RequestExampleGroup, file_path: /spec\/api/
   end
 end
 

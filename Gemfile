@@ -10,12 +10,14 @@ gem 'pg'
 gem 'turbolinks'
 gem 'therubyracer', platforms: :ruby
 gem 'unicorn'
-gem "rails_12factor", group: :production
+gem "rails_12factor"
 gem 'mandrill_mailer'
 gem "sidekiq"
 gem "thin"
 gem 'sprockets', '2.11.0'
 gem 'bootstrap-sass', '~> 3.2'
+gem 'figaro'
+gem 'faraday'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
@@ -36,4 +38,5 @@ group :test do
   gem "shoulda-matchers"
   gem "capybara"
   gem "launchy"
+  gem "webmock"
 end

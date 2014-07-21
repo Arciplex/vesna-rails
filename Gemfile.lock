@@ -69,6 +69,11 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.2)
       i18n (~> 0.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     hike (1.2.3)
@@ -95,6 +100,7 @@ GEM
     mini_portile (0.6.0)
     minitest (5.4.0)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     pg (0.17.1)
@@ -206,6 +212,8 @@ DEPENDENCIES
   debugger
   factory_girl_rails (~> 4.0)
   faker
+  faraday
+  figaro
   font-awesome-rails
   jquery-rails
   launchy

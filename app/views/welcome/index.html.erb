@@ -1,27 +1,5 @@
-<div class="navbar navbar-top" role="navigation">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12" id="brand-container">
-        <a class="navbar-brand" href="#"></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="center-block" id="nav-container">
-        <div class="pull-right">
-          <ul class="navbar-nav nav">
-            <li>
-              <a href="#">Warranty &amp; Support</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <section id="carousel-container">
-  <div class="carousel slide" data-ride="carousel" id="main-carousel">
+  <div class="carousel fade" data-ride="carousel" id="main-carousel">
 
     <ol class="carousel-indicators">
       <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -31,19 +9,22 @@
 
     <div class="carousel-inner">
       <div class="active item">
+        <%= image_tag "running_couple.png", width: "100%" %>
+
+
+        <div class="caption">
+          <h3>inspired by</h3>
+          <h1>the <span id="blue-gradient">sun's</span></h1>
+          <h3>natural energy</h3>
+        </div>
+      </div>
+      <div class="item">
         <%= image_tag "Hispanic_Couple.png", width: "100%" %>
       </div>
       <div class="item">
         <%= image_tag "woman.png", width: "100%" %>
       </div>
-      <div class="item">
-        <%= image_tag "running_couple.png", width: "100%" %>
-      </div>
     </div>
-
-    <div class="carousel-footer"></div>
 
   </div>
 </section>
-
-<%= render 'shared/footer' %>

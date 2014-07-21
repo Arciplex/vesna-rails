@@ -12,3 +12,25 @@
   <![endif]-->
 </head>
 <body>
+
+  <div class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="brand-container">
+          <%= link_to "", root_path, class: "navbar-brand" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="center-block" id="nav-container">
+          <div class="pull-right">
+            <ul class="navbar-nav nav">
+              <li>
+                <%= link_to "Warranty & Support", new_service_request_path %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
