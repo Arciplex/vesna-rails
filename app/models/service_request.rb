@@ -54,10 +54,11 @@ class ServiceRequest
     unless [200, 201].include?(@api_response.status)
       Rails.logger.debug(@api_response.inspect)
       errors.add(:base, @api_response.body)
+      return false
     else
       Rails.logger.debug(JSON.parse(@api_response.body))
       @id = JSON.parse(@api_response.body)["service_request_id"]
-      true
+      return true
     end
   end
 
