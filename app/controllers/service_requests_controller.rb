@@ -6,7 +6,6 @@ class ServiceRequestsController < ApplicationController
 
   def create
     @service_request = ServiceRequest.new(service_request_params)
-    debugger
 
     if @service_request.valid? && @service_request.save
       redirect_to new_service_request_path, notice: "Service Request #{@service_request.id} Submitted"
