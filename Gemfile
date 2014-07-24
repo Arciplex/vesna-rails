@@ -9,9 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'pg'
 gem 'turbolinks'
 gem 'therubyracer', platforms: :ruby
-gem 'unicorn'
 gem "rails_12factor"
-gem 'mandrill_mailer'
 gem "sidekiq"
 gem "thin"
 gem 'sprockets', '2.11.0'

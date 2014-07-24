@@ -7,6 +7,9 @@ require 'capybara/rails'
 require 'rspec/rails'
 require 'database_cleaner'
 require 'faker'
+require 'webmock/rspec'
+
+WebMock.disable_net_connect!(allow_localhost: false)
 
 def setup_environment
 

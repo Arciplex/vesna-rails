@@ -20,4 +20,8 @@ FactoryGirl.define do
     address_type "Business"
     troubleshooting_reference "Lorem Ipsum"
   end
+
+  factory :service_request_no_fields, class: ServiceRequest do
+    last_name Faker::Name.last_name
+  end
 end

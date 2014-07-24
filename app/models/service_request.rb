@@ -1,11 +1,13 @@
 class ServiceRequest
   include ActiveModel::Model
   include ActiveModel::Validations
+  include ActiveModel::Serialization
   extend ActiveModel::Naming
 
   attr_accessor :first_name, :last_name, :prefix, :contact_email, :phone_number,
                 :address, :address2, :city, :state, :zip_code, :country,
-                :address_type, :troubleshooting_reference, :line_items, :id
+                :address_type, :troubleshooting_reference, :line_items, :id,
+                :api_response, :errors
 
   validates_presence_of :first_name, :last_name, :contact_email, :phone_number,
                         :address, :city, :state, :zip_code, :country, :address_type,
@@ -14,10 +16,10 @@ class ServiceRequest
   validate :check_line_items
 
   def initialize(attributes = {})
-    super
+    attributes.each do |k, v|
+      send("#{k}=", v)
+    end
     @errors = ActiveModel::Errors.new(self)
-    @api_response = nil
-    @id = nil
   end
 
   def check_line_items
