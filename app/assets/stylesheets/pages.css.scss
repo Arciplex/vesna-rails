@@ -1,0 +1,15 @@
+.pages {
+  h1 {
+    color: #0092CA;
+    font-size: 60px;
+  }
+
+  p {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  img {
+    @include border-radius(5px);
+  }
+}
