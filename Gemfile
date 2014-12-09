@@ -16,6 +16,7 @@ gem 'sprockets', '2.11.0'
 gem 'bootstrap-sass', '~> 3.2'
 gem 'figaro'
 gem 'faraday'
+gem 'mandrill_mailer'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'

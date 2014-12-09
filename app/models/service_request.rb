@@ -28,6 +28,10 @@ class ServiceRequest
     end
   end
 
+  def customer_full_name
+     "#{first_name} #{last_name}"
+  end
+
   def line_items_attributes=(attributes)
     @line_items ||= []
     attributes.each do |i, params|

@@ -8,6 +8,7 @@ class ServiceRequestsController < ApplicationController
     @service_request = ServiceRequest.new(service_request_params)
 
     if @service_request.valid? && @service_request.save
+      WarrantyMailer.submitted(@service_request).deliver
       redirect_to new_service_request_path, notice: "Service Request #{@service_request.id} Submitted"
     else
       redirect_to new_service_request_path, flash: {error: @service_request.errors.full_messages.to_sentence}
