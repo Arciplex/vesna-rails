@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   match "/privacy" => "pages#privacy", via: :get
   match "/product" => "pages#product", via: :get
 
-  match "214783d5702b0c95f5911a6e14b83ceb.txt" => "pages#md5", via: :get 
+  match "9930C656881A4D935E5D50D2FD7F6F35.txt" => "pages#md5", via: :get 
 
   root "welcome#index"
 

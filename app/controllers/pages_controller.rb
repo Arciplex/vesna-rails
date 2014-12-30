@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def md5
-     render file: 'public/214783d5702b0c95f5911a6e14b83ceb.txt' 
+     render file: 'public/9930C656881A4D935E5D50D2FD7F6F35.txt' 
   end
 
 end
